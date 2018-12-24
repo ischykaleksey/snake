@@ -10,8 +10,22 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int x1 = 2;
+            int y1 = 3;
+            char symbol1 = '*';
+            Draw(x1, y1, symbol1);
+
+            int x2 = 4;
+            int y2 = 6;
+            char symbol2 = '#';
+            Draw(x2, y2, symbol2);
+
             Console.ReadLine();
+        }
+        static void Draw (int x, int y, char symbol)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(symbol);
         }
     }
 }
